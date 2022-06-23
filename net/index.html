@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="stilinho.css">
     <style>
               
         #nav-bar{
@@ -21,7 +22,7 @@
           margin-top: -10px;
         }
         body{
-          background-color: black;
+          background-color: #000000;
         }
         #carouselExampleControls{
           margin-top: -10px;
@@ -75,9 +76,7 @@
                 <a class="nav-link" href="#">Minha Lista</a>
               </li>
               
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
+              
             </ul>
             <!--Criando um botão com opções.-->
             <div class="dropdown" >
@@ -93,7 +92,7 @@
 
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+              <button class="btn btn-danger" type="submit">Pesquisar</button>
             </form>
           </div>
         </div>
@@ -143,6 +142,95 @@
         </button>
       </div>
 
+      <section>
+        <div>
+            <img src="obraa.png" id="fundo" alt="">
+        </div>
+        <!--Criando os cards-->
+        <div id="cards">
+            <section id="cards1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                          <h3 class="display-3 text-center" id="titulocards">VEJA</h3>
+                        </div>
+                        <div class="col-3">
+                            <div class="card editar-card" text-center >
+                                <img src="imagens1/voice-control.png" alt="podcast" class="card-img-top rounded-circle"  id="efeito-img">
+                                <div class="card-body">
+                                    <h4 class="card-title">PodCast</h4>
+                                    <p class="card-text">Escute os novos episodios.</p>
+                                    <a href="#" class="btn btn-danger">Escute</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card editar-card" text-center id="cardtodo" >
+                                <img src="imagens1/adventure.png" alt="parede" class="card-img-top rounded-circle" id="efeito-img">
+                                <div class="card-body">
+                                    <h4 class="card-title">Documentarios</h4>
+                                    <p class="card-text">Assista as mais novas aventuras.</p>
+                                    <a href="#" class="btn btn-danger">Assistir</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card editar-card" text-center >
+                                <img src="imagens1/video.png" alt="parede" class="card-img-top rounded-circle" id="efeito-img">
+                                <div class="card-body">
+                                    <h4 class="card-title">Filmes</h4>
+                                    <p class="card-text">Vejas os mais novos lançamentos</p>
+                                    <a href="#" class="btn btn-danger">Assistir</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card editar-card" text-center >
+                                <img src="imagens1/smart-tv.png" alt="Series" class="card-img-top rounded-circle" id="efeito-img" >
+                                <div class="card-body">
+                                    <h4 class="card-title">Series</h4>
+                                    <p class="card-text">Novos episodios todas as sextas.</p>
+                                    <a href="#" class="btn btn-danger">caixinha</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!--Criando imagens-->
+    <section>
+      <div class="container" id="divdasimagens">
+          <div class="row">
+              <div class="col-7 align-self-center">
+                  <h1 class="display-3" >
+                      Viuva negra
+                  </h1>
+                  <br><h2 class="text-muted">A viuva negra, não é negra e nem viuva.</h2>
+                  <p>texto</p>
+              </div>
+              <div class="col-5"><img src="imagens1/viuvanegra.jpg" alt="viuva" style="max-height: 500px; "></div>
+                  
+          </div>
+          <hr/>
+          <div class="row">
+              <div class="col-7 align-self-center">
+               <img src="imagens1/sing2.png" alt="">
+          </div>
+          <div class="col-5">
+              <h1 class="display-3"> Sing 2
+              
+              </h1>
+              <h2>
+                  <br><span class="text-muted">Monte de animal cantor</span>
+              </h2>
+              <p>Miau au</p>
+          </div>
+      </div>
+  </section>
+
+
       <!--Criando o rodapé-->
      <!-- Footer -->
 <footer class="bg-dark text-center text-white">
@@ -153,32 +241,33 @@
       <!-- Facebook -->
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-facebook-f"></i
-      ></a>
+      ><img src="imagens1/facebook.png" alt=""></a>
 
       <!-- Twitter -->
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-twitter"></i
-      ></a>
+      ><img src="imagens1/twitter.png" alt=""></a>
 
       <!-- Google -->
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-google"></i
-      ></a>
+      ><img src="imagens1/tik-tok.png" alt=""></a>
 
       <!-- Instagram -->
+      
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-instagram"></i
-      ></a>
+      ><img src="imagens1/instagram.png" alt=""></a>
 
       <!-- Linkedin -->
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-linkedin-in"></i
-      ></a>
+      ><img src="imagens1/linkedin.png" alt=""></a>
 
       <!-- Github -->
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-github"></i
-      ></a>
+      ><img src="imagens1/whatsapp.png" alt=""></a>
     </section>
     <!-- Section: Social media -->
 
@@ -321,9 +410,9 @@
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); max-width: 200px;">
-    © 2022 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">Netflix.com</a>
+  <div class="text-center p-3" style="max-width: 200px;">
+    
+    © 2022 Copyright:<a class="text-white" href="https://mdbootstrap.com/">Netflix.com</a>
   </div>
   <!-- Copyright -->
 </footer>
