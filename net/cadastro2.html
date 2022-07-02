@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    
     <style>
         #logonavbar{
             width: 150px;
@@ -39,8 +39,12 @@
         form{
           margin-left: 450px;
           margin-right: 500px;
-          margin-top: 250px;
+          margin-top: 150px;
         }
+        
+            
+
+        
         footer{
           margin-bottom: 0px;
           background-color: rgb(243, 243, 243);
@@ -49,6 +53,7 @@
     </style>
 </head>
 <body>
+    <!--Criando a navbar-->
     <nav class="navbar">
         <div id="containerlogo" class="container">
           <a id="linkimagem" class="navbar-brand" href="index.html" target="_blank">
@@ -57,18 +62,32 @@
         </div>
         <button id="botaoentrar" type="button" class="btn btn-link">Entrar</button>
       </nav><hr>
-    
+      <!--Criando o formulario-->
       <div class="container">
         <form action="#">
-        <p style="margin-bottom: 10px;">PASSO 1 DE 3</p> 
-        <h3 style="margin-bottom: 10px;">Crie uma senha para iniciar sua assinatura</h3>
-        <h6 style="margin-bottom: 10px;">Faltam só mais alguns passos!</h5>
-        <h6 style="margin-bottom: 10px;">Nós também detestamos formulários.</h5>
-        <input style="margin-bottom: 10px;" id="" type="email" placeholder="Email" required><br>
-        <input style="margin-bottom: 10px;" type="password" placeholder="Digite sua senha" required><br>
-        <button style="margin-bottom: 10px;" type="submit" class="btncad"> <span><b> Próximo</b></span></button>
+            <h2><strong> Aprender algo novo é a certeza de um futuro melhor.</strong></h2>
+            <span style=" color: rgba(255, 0, 0, 0.471);"><strong> <i> Crie já sua conta!</i></strong></span><br>
+
+            <label for="">Nome do usuario</label>
+            <input type="text" name="" id="" required>
+
+            <label for="">Endereço de E-mail</label>
+            <input type="email" name="" id="" required>
+
+            <label for="">Telefone</label>
+            <input type="tel" required>
+
+            <label for="">Senha</label>
+            <input type="password" required>
+
+            <span style="font-size: 10px;">Ao clicar em "Criar conta", certifico que tenho 14 anos ou mais e aceito: Termos de uso, política de privacidade, Política de Cookies e receber novidades e promoções.</span><br>
+            <button class="btncad" type="submit">CADASTRE-SE</button><br>
+            <span style="text-align: center;">Já tem uma conta em nosso site? <a href="cadastro1.html">Entre</a></span>
         </form>
       </div>
+
+
+<!--Criando footer-->
       <footer>
         <hr>
       <div class="container" >
@@ -113,9 +132,8 @@
         </div>
       
       </footer>
-
-      
-    <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/bootstrap.bundle.js"></script>
+    
 </body>
 </html>
