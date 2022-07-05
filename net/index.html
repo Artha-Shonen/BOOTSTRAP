@@ -10,6 +10,8 @@
     <style>
           #navbarsuprema{
           padding: 0%;
+          
+          
         }
         #textosobre{
            color: #ffffff;
@@ -17,7 +19,8 @@
         }
         #nav-bar{
           background-image: linear-gradient(black,black,black,rgb(15%15%15%));
-          padding-top: 0%;
+          margin-bottom:10px ;
+          
         }
         .nav-link{
           color: white;
@@ -70,6 +73,10 @@
         #rodapesupremo{
           margin: auto;
         }
+        #anunciofilmes{
+          color: #ffffff;
+        }
+        
     </style>
 </head>
 <body>
@@ -86,17 +93,15 @@
                 <a class="nav-link active" id="inicio" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Séries</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Filmes</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="noticia.html">Noticias</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Minha Lista</a>
+                <a class="nav-link" href="contato.html">Contatos</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              
               
               
             </ul>
@@ -106,9 +111,9 @@
                 Mais
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Cadastre-se</a></li>
+                <li><a class="dropdown-item" href="cadastro1.html">Cadastre-se</a></li>
                 <li><a class="dropdown-item" href="#">Login</a></li>
-                <li><a class="dropdown-item" href="#">Saiba mais</a></li>
+                <li><a class="dropdown-item" href="trabalhe.html">Trabalhe conosco</a></li>
               </ul>
             </div>
 
@@ -222,15 +227,15 @@
         </div>
     </section>
     <!--Criando imagens-->
-    <section>
+    <section id="anunciofilmes">
       <div class="container" id="divdasimagens">
           <div class="row">
-              <div class="col-7 align-self-center">
+              <div class="col-7 align-self-center" >
                   <h1 class="display-3" >
                       Viuva negra
                   </h1>
                   <br><h2 class="text-muted">A viuva negra, não é negra e nem viuva.</h2>
-                  <p>texto</p>
+                  <p>Gata</p>
               </div>
               <div class="col-5"><img src="imagens1/viuvanegra.jpg" alt="viuva" style="max-height: 500px; "></div>
                   
@@ -240,7 +245,7 @@
               <div class="col-7 align-self-center">
                <img src="imagens1/sing2.png" alt="">
           </div>
-          <div class="col-5">
+          <div class="col-5" >
               <h1 class="display-3"> Sing 2
               
               </h1>
@@ -308,24 +313,27 @@
           <!--Grid column-->
 
           <!--Grid column-->
+          <form action="#" method="post">
           <div class="col-md-5 col-12">
             <!-- Email input -->
             <div class="form-outline form-white mb-4">
-              <input type="email" id="form5Example21" class="form-control" />
+              <input type="email" id="form5Example21" class="form-control" required>
               <label class="form-label" for="form5Example21">Endereço de email.</label>
-            </div>
-          </div>
+            
           <!--Grid column-->
 
           <!--Grid column-->
-          <form action="#" method="post">
+         
             <a href="cadastro1.html"><div class="col-auto" >
             <!-- Submit button -->
             <button type="button" class="btn btn-outline-light mb-4">
               Inscreva-se
             </button></a>
+          </form>
           </div>
-        </form>
+        </div>
+      </div>
+        
           <!--Grid column-->
         </div>
         <!--Grid row-->
