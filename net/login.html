@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    
     <style>
         #logonavbar{
             width: 150px;
@@ -31,24 +30,44 @@
         input{
             height: 65px;
             width: 440px;
+            background-color: #4f4f4f;
             
+        }
+        input::placeholder{
+            color: #ffffff;
+
         }
         input:invalid{
           border-color: #ff0000;
         }
         form{
-          margin-left: 450px;
-          margin-right: 500px;
-          margin-top: 250px;
+         opacity: 1;
         }
         footer{
           margin-bottom: 0px;
           background-color: rgb(243, 243, 243);
           height: 300px;
+          opacity: 0.7;
+          margin-top: 500px;
+          
         }
+        #caixalogin{
+            opacity: 0.7;
+            background-color: #4f4f4f;
+            height: 500px;
+            width: 550px;
+            color: #ffffff;
+        }
+       
         body{
-          background-image: url(imagens1/fundologin.jpg);
+            background-image: url(imagens1/fundologin.jpg);
         }
+        #fundoinput{
+            background-color: #4f4f4f;
+            opacity: 0.7;
+        }
+        
+        
     </style>
 </head>
 <body>
@@ -60,22 +79,26 @@
         </div>
         <button id="botaoentrar" type="button" class="btn btn-link">Entrar</button>
       </nav><hr>
-      
-      <section>
 
+      
+      <section >
+        <div class="container text-center" id="caixalogin">
+           
+            
+                
+            
+           
+        </div>
+        <form action=""> 
+            <h1>Entrar</h1>
+
+            <label for=""></label>
+            <input type="text" placeholder="Email ou telefone"><br>
+            <input type="password" placeholder="Senha"><br>
+            <button type="submit">Entrar</button>
+        </form>
       </section>
 
-      <div class="container">
-        <form action="#">
-        <p style="margin-bottom: 10px;">PASSO 1 DE 3</p> 
-        <h3 style="margin-bottom: 10px;">Crie uma senha para iniciar sua assinatura</h3>
-        <h6 style="margin-bottom: 10px;">Faltam só mais alguns passos!</h5>
-        <h6 style="margin-bottom: 10px;">Nós também detestamos formulários.</h5>
-        <input style="margin-bottom: 10px;" id="" type="email" placeholder="Email" required><br>
-        <input style="margin-bottom: 10px;" type="password" placeholder="Digite sua senha" required><br>
-        <a href="cadastro2.html"><button style="margin-bottom: 10px;" type="button" class="btncad" > <span><b> Próximo</b></span></button></a>
-        </form>
-      </div>
       <footer>
         <hr>
       <div class="container" >
@@ -121,8 +144,7 @@
       
       </footer>
 
-      
-    <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
